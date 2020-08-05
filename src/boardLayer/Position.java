@@ -1,4 +1,4 @@
-package bordLayer;
+package boardLayer;
 
 public final class Position {
 	private Integer row;

@@ -1,6 +1,6 @@
 package application;
 
-import bordLayer.Board;
+import boardLayer.Board;
 import chessLayer.ChessMatch;
 
 public class Program {

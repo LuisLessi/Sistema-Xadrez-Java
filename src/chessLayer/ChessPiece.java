@@ -1,7 +1,7 @@
 package chessLayer;
 
-import bordLayer.Board;
-import bordLayer.Piece;
+import boardLayer.Board;
+import boardLayer.Piece;
 
 public abstract class ChessPiece extends Piece {
 	private Color color;
@@ -11,10 +11,9 @@ public abstract class ChessPiece extends Piece {
 		super();
 	}
 
-	public ChessPiece(Board board, Color color, Integer moveCount) {
+	public ChessPiece(Board board, Color color) {
 		super(board);
 		this.color = color;
-		this.moveCount = moveCount;
 	}
 
 	public Color getColor() {
