@@ -20,7 +20,15 @@ public final class Position {
 		return column;
 	}
 	
-	public void setValue(int row, int column) {
+	public void setRow(Integer row) {
+		this.row = row;
+	}
+
+	public void setColumn(Integer column) {
+		this.column = column;
+	}
+
+	public void setValues(int row, int column) {
 		this.column = column;
 		this.row = row;
 	}
@@ -29,7 +37,6 @@ public final class Position {
 	public String toString() {
 		return this.row+", "+ this.column;
 	}
-	
 	
 	
 }
