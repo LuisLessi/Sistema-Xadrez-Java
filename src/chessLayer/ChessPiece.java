@@ -6,7 +6,7 @@ import boardLayer.Position;
 
 public abstract class ChessPiece extends Piece {
 	private Color color;
-	private Integer moveCount;
+	private int moveCount;
 	
 	public ChessPiece() {
 		super();
@@ -21,10 +21,18 @@ public abstract class ChessPiece extends Piece {
 		return color;
 	}
 
-
-	public Integer getMoveCount() {
+	public int getMoveCount() {
 		return moveCount;
 	}
+
+	public void increaseMoveCount() {
+		moveCount++;
+	}
+	
+	public void decreaseMoveCount() {
+		moveCount--;
+	}
+	
 
 	public void setMoveCount(Integer moveCount) {
 		this.moveCount = moveCount;
