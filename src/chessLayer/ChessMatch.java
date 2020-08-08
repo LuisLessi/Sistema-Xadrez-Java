@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import javax.activity.InvalidActivityException;
 
 import boardLayer.Board;
 import boardLayer.Piece;
@@ -122,7 +121,7 @@ public class ChessMatch {
 		}
 		
 		if(!type.equals("B") && !type.equals("N") && !type.equals("R")  && !type.equals("Q")) {
-			throw new InvalidParameterException("Invalid type for promotion");
+			return promotion;
 		}
 		
 		Position pos = promotion.getChessPosition().toPosition();
